@@ -1,0 +1,1860 @@
+
+    /* Style header */
+
+    html,body{
+        overflow-x: hidden;
+    }
+
+    body{
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        direction: rtl;
+        font-family: 'vazirmath',sans-serif;
+        background-color:#FDFDFD;
+        
+
+
+
+        
+    }
+
+   
+
+    header{
+        width: 100%;
+        height: 90px;
+        background-color: #1E2A38;
+        border-radius: 3px;
+       
+
+    }
+
+    .info{
+
+        color: white;
+        display: flex;   
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+        
+       
+        
+       
+        
+    }
+
+    .icon{
+        padding-left: 10px;
+    }
+
+   
+
+    .box img{
+
+        width: 18%;
+        margin-top: 12px;
+        margin-right: 10px;
+        border-radius: 40%;
+        display: block;
+        transition:0.8s;
+        
+
+        }
+
+        .box1{
+        
+            display:inline-block;
+            position: relative;
+            left:150px;
+           
+           
+           
+            
+          
+        }
+
+        .hm{
+            position: relative;
+            top: 5px;
+            left: -26.5px;
+            transition: 0.4s;
+           }
+
+           .ar{
+            top: 8px;
+           }
+  
+
+        h3,p{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* hover */
+        
+        .box img:hover{
+
+            border: 1px solid rgb(245, 185, 4);
+
+        }
+       
+        .hm:hover{
+
+            font-size:18px; 
+            color:rgb(245, 185, 4)
+            
+            
+                   
+        }
+
+        .ar:hover{
+
+            transition: 0.4s;
+            font-size:18px;
+            color:rgb(245, 185, 4)
+            
+
+        }
+
+        .child:hover{
+
+            background-color:#98edd2;
+        }
+
+
+         a:hover{
+
+            background:#0c0c0d5e;
+            display: block;
+            border-radius: 4px;
+            
+
+            
+        }
+
+        
+        .bt:hover{
+            font-size: 15px;
+
+        }
+
+        .sr:hover{
+            background-color:rgba(8, 9, 8, 0.151);
+        }
+
+        .butt1:hover{
+            background-color:#00695c;
+                    
+        }
+
+         .dw:hover{
+            background-color:#17a3b801 ;
+            color:blue;
+            font-size: 13px;
+        }
+
+        .child-ft3:hover{
+            transform: translateX(10px);
+
+        }
+
+
+
+        /* hamburger menu */
+
+        .hm{
+            cursor: pointer;
+            
+        }
+
+        .ar{
+            cursor: pointer;
+        }
+
+        
+        .parrent{
+            position: relative;
+            display: flex;
+            
+            
+        }
+
+        .menu{
+
+            opacity: 0;
+            transition: all 0.4s ease;
+            visibility: hidden;
+            position: absolute;
+            top:71px;
+            left: 0.2px;
+            width:200px;
+            height:auto;
+            text-align: center;
+            border-radius: 4px;
+            background-color:#1e2a38b0;
+            
+            
+        }
+
+        #check:checked ~ .menu{
+            opacity: 1;
+            visibility: visible;
+            
+        }
+
+
+              
+        .fa-arrow-left{
+            position: relative;
+            top:2px;
+            left: 8px;
+            visibility: hidden;
+        }
+
+
+        .menu ul li{
+            list-style-type: none;
+            padding-top: 25px;
+            padding-left: 15px;
+            
+        }
+
+        .menu ul a{
+            text-decoration: none;
+            transition:0.5s;
+            color: white;
+            
+        }
+
+       
+        #check:checked ~ .menu{
+            opacity: 1;
+            visibility: visible;
+            
+        }
+  
+        
+        #check:checked ~ label .fa-bars{
+           
+            display: none;
+        }
+
+
+        #check:checked ~ label .fa-arrow-left{
+           
+            visibility: visible;
+        }
+
+        /* Style main */
+
+      
+    .bx{
+        width: 300px;
+        height: auto;
+        border: 1px solid rgba(0, 0, 0, 0.386);
+        border-radius: 7px;
+        position: relative;
+        top: 130px;
+        margin: 0 auto;
+        z-index: 1;
+        transition: all 1s ease;
+        cursor: pointer;
+        
+
+        
+        
+    }
+
+    .card{
+        width: 100px;
+        height: auto;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 4px;
+        background-color: chartreuse;
+        transform: translatex(1px);
+        visibility: hidden;
+        transition: all  0.8s ease;
+       
+        
+        
+    }
+
+   
+
+    .bx:hover{
+        top: 90px;
+        box-shadow: 0 6px 40px rgba(0, 0, 0, 0.125);
+
+    }
+
+
+    .bx:hover .card{
+        
+        visibility: visible;
+        transform: translatex(-10px);
+       
+        
+       
+        
+        
+
+    }
+
+
+
+    .bx-parr{
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+
+
+    .a1{
+        
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+        color: black;
+
+    }
+
+    .bx::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+
+
+
+       
+
+        img{
+            
+            width:78%;
+            margin-top: 10px;
+            border-radius: 7px;
+            margin-right: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all ease 1s;
+           
+            
+            
+        }
+
+
+
+        .img{
+
+            width:78%;
+            margin-top: 10px;
+            border-radius: 7px;
+            margin-right: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+        }
+
+        
+           .img{
+
+            width:78%;
+            margin-top: 10px;
+            border-radius: 7px;
+            margin-right: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+        }
+
+
+        .pr-sr{
+           height: 0;
+           display: flex;
+           justify-content: center;
+        }
+
+        .sr{
+            margin-top: 100px;
+            margin-left:30px;
+            display: inline-block;
+            transition: 0.4s;
+            width: 40%;
+            height: 35px;
+            border: 1px solid black;
+            border-radius: 5px;
+            
+        }
+
+        
+
+        .bt{
+            margin-top: 100.5px;
+            margin-left: 8px;
+            width: 39px;
+            height:39px;
+            background-color:white;
+            cursor: pointer;
+            transition: 0.7s;
+            border: none;
+        }
+
+        .mtx{
+            display: flex;
+            justify-content: center;
+            padding-left: 25px;
+            
+        }
+
+         .mtx2{
+            display: flex;
+            justify-content: center;
+            padding-left: 15px;
+            
+        }
+
+        .my-txt2{
+            padding-right: 15px;
+            font-size: 18px;
+        }
+
+        .pd{
+            padding: 15px 15px;
+        }
+
+
+
+
+        /* style main2 */
+
+        .down-bx{
+
+            width: 45%;
+            display: flex;
+            margin-top: 140px;
+            
+            border-radius: 3px;
+            overflow: hidden;
+        
+        
+
+        }
+
+        
+
+
+        .ul-2{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            font-size: 12px;
+            gap: 10px;
+           
+          
+            
+        }
+
+
+        .dw{
+            background-color: #17a2b8;
+            color: white;
+            border-radius: 8px;
+            padding: 10px 10px;
+            transition: 0.4s;
+            
+            
+        }
+
+       
+       
+
+
+
+
+        .A-dw{
+            text-decoration: none;
+            color: black;
+            
+            
+           
+            
+            
+           
+        }
+
+      
+
+   p{
+
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+
+   }
+
+   
+
+
+        /* style footer */
+
+        .ft-parrent{
+            width: 100%;
+            height: 107px;
+            background-color: #1E2A38;
+            border-radius: 3px;
+            margin-top: 45px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+        }
+
+            .ft-parrent2{
+            width: 100%;
+            height: 107px;
+            background-color: #1E2A38;
+            border-radius: 3px;
+            margin-top: 250px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+        }
+
+
+        
+            .ft-parrent3{
+            width: 100%;
+            height: 107px;
+            background-color: #1E2A38;
+            border-radius: 3px;
+            margin-top: 250px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+        }
+
+
+        
+            .ft-parrent4{
+            width: 100%;
+            height: 107px;
+            background-color: #1E2A38;
+            border-radius: 3px;
+            margin-top: 250px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+        }
+
+
+
+
+      
+
+
+        .child-ft{
+            color: white;
+            font-size: 13.5px;
+            padding-top: 44.5px;
+            padding-right: 10px;
+            
+            
+        }
+        .child-ft2{
+            color: white;
+            font-size: 12px;
+            padding-top:45px;
+            padding-left: 15px;
+            display: inline-block;
+            position: relative;
+            left: 55px;
+            
+            
+            
+        }
+
+        a{
+            color: #26a69a;
+        }
+        .child-ft3{
+            padding-top: 31px;
+            font-size:33px;
+            padding-left: 10px;
+            cursor: pointer;
+            transition: 0.7s;
+
+            
+            
+            
+            
+            
+            
+        }
+
+        .p2{
+            display: none;
+        }
+
+
+
+    /* Style main index2*/
+
+
+    .img-in2{
+        width:30%;
+        position: relative;
+        top: 5px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 10px;
+      
+        
+    }
+
+    .para{
+        width: 70%;
+        height: auto;
+        border: 1px solid rgba(53, 52, 52, 0.555);
+        margin-top: 10px;
+        margin-right:220px;
+        border-radius: 5px;
+       
+        
+   }
+
+   p{
+
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+
+   }
+
+   /* Style main insex4 */
+
+   
+    .ic-c{
+        width: 40px;
+    }
+
+    .ic-a{
+        text-decoration: none;
+      
+        color: black;
+        font-size: 20px;
+
+
+
+        }
+
+    .ic-bt{
+
+        border: none;
+        background: rgba(255, 255,255,0.2);
+        border: 1px solid rgba(0, 0, 0, 0.329);
+        position: relative;
+        top: 5px;
+        border-radius: 4px;
+        width: 100px;
+        transition:all 0.4s ease-in-out;
+        
+        
+       
+    }
+
+    .ic-bt:hover{
+        transform: scaleX(1.05);
+    }
+
+    .call{
+       margin: 30px 65px;
+       cursor: pointer;
+      
+    }
+
+    .call-a{
+        text-decoration: none;
+       
+    }
+
+    table{
+       
+        position: relative;   
+        top:15px;
+        right: 50px;
+        
+       
+     
+    }
+
+   
+
+    .con-bx{
+
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        position: relative;
+        top: 90px;
+        border-radius: 3px;
+        box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
+
+        
+        animation:  Move 0.7s ease-in-out;
+        
+
+        
+
+    }
+
+    @keyframes Move{
+        0%{
+            transform: translateX(-50px);
+        }
+
+            
+
+        
+    }
+
+        
+        
+  
+        /* Responsive tablet*/
+
+        @media only screen and (max-width:768px){
+
+            /* Respons header */
+
+            .box img{
+
+                margin-right:15px;
+                margin-top: 18px;
+                width:65px;
+                
+            }
+
+
+            .box1{
+
+                top: 7px;
+                left: -10px;
+
+               
+                
+            }
+
+            /* Response main */
+
+             .bx-parr{
+
+                margin-right: 40px;
+
+                gap: 10px;
+                width: 90%;
+       
+        
+             }
+
+
+
+            .oll2{
+                font-size: 12px;
+            }
+
+            .pd{
+                font-size: 12.5px;
+            }
+
+            
+
+            
+
+            
+
+            
+
+           
+
+
+            /* Resposive main2 */
+
+            .down-bx{
+                margin-top: 200px;
+            }
+
+             .ul-2{
+                font-size: 9px;
+             }
+
+
+
+           
+            /* Responsive main index2 */
+
+            .img-in2{
+                width:30%;
+                position: relative;
+                left: 7px;
+        
+        
+                
+            }
+
+            .para{
+               margin-top:84px;
+               width: 92.5%;          
+               position: relative;
+               left:200px;
+        
+           }
+
+            /* Responsive footer */
+            
+           .ft-parrent2{
+            
+            margin-top:75px;
+            
+             }
+
+
+                  .ft-parrent3{
+            margin-top: 15px;
+        }
+
+
+
+                 .ft-parrent4{
+                    margin-top: 270px;
+        }
+
+  
+  
+  
+
+
+            /* Resposive index4 */
+            .con-bx{
+              top: 130px;
+          }
+
+
+
+           
+          
+           
+}
+
+           
+
+       
+        /* Responsive mobile */
+     @media only screen and (max-width: 640px) {
+
+    /* Respons header for 640px */
+
+    .box img {
+        margin-right: 10px;
+        margin-top: 15px;
+        width: 55px;
+    }
+
+    .box1 {
+        top: 5px;
+        left: -15px;
+    }
+
+    .sr{
+       width: 32%; 
+    }
+
+    /* Response main for 640px */
+
+
+     .bx-parr{
+
+                margin-right: 30px;
+
+                gap: 10px;
+                width: 90%;
+       
+        
+             }
+
+
+          
+
+            .oll2{
+                font-size: 12px;
+            }
+
+            .pd{
+                font-size: 11px;
+
+            }
+
+
+
+    
+
+    img{
+        margin-right: 19px;
+    }
+
+    .img{
+        margin-right: 19px;
+    }
+
+    .sr {
+        margin-right: 2px;
+    }
+
+    .bt {
+        margin-left: 10px;
+    }
+
+    .mtx {
+        padding-left: 12px;
+    }
+
+    .my-txt {
+        font-size: 16px;
+    }
+
+    .my-txt2 {
+        font-size: 16.5px;
+        padding-right: 12px;
+    }
+
+    .info2 {
+        font-size: 13px;
+    }
+
+    .oll {
+        font-size: 13px;
+    }
+
+
+  
+
+    
+
+    /*Responsive main2 */
+
+     
+    .down-bx{
+
+            width:600px;
+            height:100px;
+            position: relative;
+            right: 45px;                              
+        }
+    
+    .ul-2{
+          font-size: 13px;
+         }
+
+
+    /* Responsive footer */
+
+    .ft-parrent{
+        margin-top: 76.5px;
+    }
+
+    .child-ft{
+        font-size: 12px;
+    }
+
+    .child-ft2{
+        font-size: 12px;
+        padding-right: 35px;
+    }
+
+       
+    .ft-parrent2{
+            
+            margin-top:75px;
+            
+             }
+
+
+              .ft-parrent3{
+            margin-top: 15px;
+        }
+
+
+                 .ft-parrent4{
+                    margin-top: 270px;
+        }
+
+  
+  
+  
+  
+  
+
+    /* Responsive main index2 */
+
+    .img-in2{
+        width:30%;
+        position: relative;
+      
+        
+        
+    
+        
+        
+                
+    }
+    
+  
+
+    .para{
+        margin-top:80px;
+        width: 92.5%;          
+        position: relative;
+        left:200px;
+        animation: Move 1s ease;
+        
+                
+        
+    }
+
+
+    /* Resposive index4 */
+    .con-bx{
+        top: 130px;
+    }
+
+
+
+
+
+}
+
+
+ @media only screen and (max-width: 480px) {
+
+    /* Respons header for 480px */
+
+    .box img {
+        margin-right: 10px;
+        margin-top: 15px;
+        width: 55px;
+    }
+
+    .box1 {
+        font-size: 14px;
+        top: 5px;
+        left: -15px;
+    }
+
+    .sr{
+       width: 32%; 
+    }
+
+    .menu{
+        z-index: 2;
+    }
+
+
+
+    /* Response main for 480px */
+
+   .bx-parr {
+        width: 100%;
+        gap: 8px;
+        flex-direction: column;
+        position: relative;
+        bottom:80px;
+        left: 28px;
+        z-index: 1;
+        
+        
+        
+        
+    }
+
+    .parrent3{
+         margin-right: 110px;
+         height: 220px;
+
+     }
+
+    .bx{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+     img{
+
+        margin-right: 40px;
+
+     }
+    .img {
+
+        margin-right: 40px;
+        
+    }
+
+    .bt{
+        visibility: hidden;
+    }
+
+    .sr{
+        visibility: hidden;
+
+    }
+
+    .findtxt{
+
+        visibility: hidden;
+
+    }
+    
+
+    .mtx {
+        padding-left: 12px;
+    }
+
+    .my-txt {
+        font-size: 20px;
+    }
+
+    .my-txt2 {
+        font-size: 16.5px;
+        padding-right: 12px;
+    }
+
+    .info2 {
+        font-size: 13px;
+    }
+
+    .oll {
+        font-size: 20px;
+        padding-right: 35px;
+    }
+
+
+    .pd {
+        padding: 15px 15px;
+        font-size: 15px;
+        
+        line-height:45px;
+    }
+
+    .oll2 {
+        padding-right: 1px;
+        font-size: 20px;
+    }
+
+
+
+    
+    /*Responsive main2 */
+
+     
+    .down-bx{
+
+            width:600px;
+            height:100px;
+            position: relative;
+           
+                                       
+        }
+    
+    .ul-2{
+          font-size: 12px;
+          position: relative;
+          left: 40px;
+         }
+
+
+    /* Responsive footer */
+
+    .ft-parrent{
+        margin-top: -3px;
+    }
+
+    .child-ft{
+        font-size: 11.5px;
+    }
+
+    .child-ft2{
+        font-size: 12px;
+        padding-right: 35px;
+    }
+
+
+   
+
+    .child-ft .pre1{
+        font-size: 10px;
+        position: relative;
+        top:1px;
+    }
+
+    .child-ft2 p{
+        font-size: 8.5px;
+        position: relative;
+        top: 4px;
+        right: 50px;
+    }
+
+       .ft-parrent2{
+            
+            margin-top:270px;
+            
+             }
+
+        .ft-parrent3{
+            margin-top: 15px;
+        }
+
+          .ft-parrent4{
+            margin-top: 27px;
+        }
+
+
+
+
+        
+
+    /* Responsive main index2 */
+
+    .img-in2{
+        width:40%;
+        position: relative;
+    
+        
+        
+                
+    }
+
+    .para{
+        margin-top: 80px;
+        width: 92.5%;     
+        position: relative;
+        left:205px;
+                
+        
+    }
+
+    /* Responsive index4 */
+
+    
+    .con-bx{
+        top: 100px;
+    }
+
+     table{
+       
+        position: relative;   
+        top:15px;
+        right: 28px;
+        
+       
+     
+    }
+
+    .ic-bt{
+        top:0.2px;
+    }
+
+     .call{
+    font-size: 10px;
+    margin: 28px 92px;
+       
+    
+
+   }
+
+    
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width:360px){
+
+    /* Responsive for 360 header */
+
+
+    
+    .box1 {
+        font-size: 12px;
+        
+    }
+
+    .menu{
+        z-index: 2;
+    }
+
+
+    /* Responsive main1 */
+
+
+    .bx-parr {
+
+        left: 30px;
+        z-index: 1;
+        
+         
+    }
+
+     img{
+
+        margin-right: 30px;
+        
+     }
+    
+    .img {
+        margin-right: 30px;
+    }
+
+
+
+    /* Responsive main2 */
+
+    .ul-2{
+        font-size: 5px;
+        
+             
+    }
+    .down-bx{
+        bottom:90px;
+    }
+
+    /* Responsive Footer */
+
+      .child-ft .pre1{
+        top:-1px;
+        font-size: 8px;
+        
+    }
+
+    .child-ft2 .p1{
+        
+        font-size: 8px;
+        padding-left: 25px;
+        top: -8px;
+        display: none;
+
+        
+        
+    }
+
+    .child-ft2 .p2{
+        display: inline-block;
+        top: -2px;
+   
+        font-size: 8px;
+       
+    }
+
+    
+
+     /* .ft-parrent2{
+            
+            margin-top:75px;
+            
+             }
+   */
+
+
+    /* Responsive index2 */
+
+      .para{
+       
+        left:208px;
+                
+        
+    }
+
+    
+    /* Resposive index4 */
+
+    .con-bx{
+        top: 200px;
+    }
+
+   .call{
+    font-size: 10px;
+    margin: 28px 89.5px;
+       
+    
+
+   }
+
+    
+
+
+}
+
+
+@media only screen and (max-width: 380px) {
+
+  /* Responsive for 375 header */
+
+  .box1 {
+    font-size: 12px;
+  }
+  .menu{
+        z-index: 2;
+    }
+
+
+
+  /* Responsive main1 */
+
+   .bx-parr {
+    
+    z-index: 1;
+
+        right: -30px;
+        
+         
+    }
+
+   img{
+     margin-right: 30px;
+
+   }
+   
+   .img {
+    margin-right: 30px;
+  }
+
+
+
+  /* Responsive main2 */
+
+  .ul-2 {
+    font-size: 8.5px;
+     padding-top: 50px;
+     
+  }
+
+
+  /* Responsive Footer */
+
+  .child-ft .pre1 {
+    top: -1px;
+    font-size: 8px;
+  }
+
+  .child-ft2 .p1 {
+    font-size: 8px;
+    padding-left: 25px;
+    top: -8px;
+    display: none;
+  }
+
+  .child-ft2 .p2 {
+    display: inline-block;
+    top: -2px;
+    font-size: 8px;
+  }
+
+   /* .ft-parrent2{
+            
+            margin-top:75px;
+            
+             }
+   */
+
+  
+    /* Responsive index2 */
+
+      .para{
+       
+        left:208px;
+                
+        
+    }
+
+    
+    /* Resposive index4 */
+
+    .con-bx{
+        top: 200px;
+    }
+
+     .call{
+    font-size: 10px;
+    margin: 28px 89.5px;
+       
+    
+
+   }
+
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+  /* Responsive for 390 header */
+
+  .box1 {
+    font-size: 12px;
+  }
+  .menu{
+        z-index: 2;
+    }
+
+
+
+  /* Responsive main1 */
+
+  .bx-parr{
+   
+    right: -29px;
+    z-index: 1;
+  }
+
+   img{
+    margin-right: 30px;
+
+   }
+   
+   .img {
+    margin-right: 30px;
+  }
+
+
+  
+
+
+  /* Responsive main2 */
+
+    .ul-2 {
+    font-size: 8.5px;
+     padding-top: 50px;
+     
+  }
+
+
+  /* Responsive Footer */
+
+  .child-ft .pre1 {
+    top: -1px;
+    font-size: 8px;
+  }
+
+  .child-ft2 .p1 {
+    font-size: 8px;
+    padding-left: 25px;
+    top: -8px;
+    display: none;
+  }
+
+  .child-ft2 .p2 {
+    display: inline-block;
+    top: -2px;
+    font-size: 8px;
+  }
+
+     /* .ft-parrent2{
+            
+            margin-top:75px;
+            
+             }
+   */
+
+  
+
+
+
+  
+    /* Responsive index2 */
+
+      .para{
+       
+        left:208px;
+                
+        
+    }
+
+    
+    /* Resposive index4 */
+
+    .con-bx{
+        top: 200px;
+    }
+
+     .call{
+    font-size: 10px;
+    margin: 28px 89.5px;
+       
+    
+
+   }
+
+}
+
+
+@media only screen and (max-width: 422px) {
+
+  /* Responsive for 412 header */
+
+  .box1 {
+    font-size: 12px;
+  }
+  .menu{
+        z-index: 2;
+    }
+
+
+
+  /* Responsive main1 */
+
+   .bx-parr{
+    
+    left: 35px;
+    z-index: 1;
+  }
+
+ img{
+
+    margin-right: 30px;
+
+ }
+   
+   .img {
+    margin-right: 30px;
+  }
+
+
+ 
+
+  /* Responsive main2 */
+
+  .ul-2 {
+    font-size: 8.5px;
+     padding-top: 50px;
+     
+  }
+
+   .down-bx{
+        bottom:90px;
+    }
+
+
+  /* Responsive Footer */
+
+  .child-ft .pre1 {
+    top: -1px;
+    font-size: 8px;
+  }
+
+  .child-ft2 .p1 {
+    font-size: 8px;
+    padding-left: 25px;
+    top: -8px;
+    display: none;
+  }
+
+  .child-ft2 .p2 {
+    display: inline-block;
+    top: -2px;
+    font-size: 8px;
+  }
+
+  
+
+ 
+    /* Responsive index2 */
+
+      .para{
+       
+        left:208px;
+                
+        
+    }
+
+    /* Resposive index4 */
+
+    .con-bx{
+        top: 150px;
+    }
+
+     .call{
+    font-size: 10px;
+    margin: 28px 95px;
+       
+    
+
+   }
+    
+
+}
+
+
+@media only screen  and (max-width:320px){
+    /* Resposive main2 */
+     .ul-2 {
+    font-size: 7px;
+     padding-top: 50px;
+     
+  }
+
+}
+
+
+/* Responsie Desktop */
+
+@media only screen and (min-width:1024px){
+
+
+    /* Responsive main */
+
+
+  
+
+     /* Responsive main2*/
+     /* .ul-2{
+        font-size: 9px;
+     } */
+
+
+     /* Responsive index2 */
+
+     .para{
+        width: 98%;
+        margin-top:95px;
+        margin-right:9.70px;
+     }
+
+      
+
+
+
+
+
+
+}
+
+@media only screen and (min-width:1280px){
+
+
+    /* Responsive main */
+
+
+  
+
+     /* Responsive main2*/
+     /* .ul-2{
+        font-size: 8.5px;
+     } */
+
+
+     /* Responsive index2 */
+
+     .para{
+        width: 98%;
+        margin-top:95px;
+        margin-right:9.70px;
+     }
+
+      
+
+
+
+
+
+
+}
+
+
+@media only screen and (min-width:1440px){
+
+
+    /* Responsive main */
+
+
+  
+
+     /* Responsive main2*/
+     /* .ul-2{
+        font-size: 8.5px;
+     } */
+
+
+     /* Responsive index2 */
+
+     .para{
+        width: 98%;
+        margin-top:95px;
+        margin-right:9.70px;
+     }
+
+      
+
+
+
+
+
+
+}
+
+
+
+
+
+@media only screen and (min-width:1920px){
+
+
+    /* Responsive main */
+
+
+  
+
+     /* Responsive main2*/
+     /* .ul-2{
+        font-size: 9px;
+     } */
+
+
+     /* Responsive index2 */
+
+     .para{
+        width: 98%;
+        margin-top:95px;
+        margin-right:9.70px;
+     }
+
+      
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
